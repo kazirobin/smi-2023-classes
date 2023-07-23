@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 3 (Form)</title>
+</head>
+<body>
+    <form action="https://www.facebook.com/" id="from">
+        <label for="user">User Name</label><br>
+        <input type="text" name="user" id="user" placeholder="Enter your name"><br>
+        <label for="email">User Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+        <label for="phone">User Phone Number</label><br>
+        <input type="number" name="phone" id="phone" placeholder="Enter your number"><br>
+        <label for="option">User Option</label><br>
+        <select name="option" id="option">
+            <option value="1">Option 1</option>
+            <option value="2" selected>Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+        </select><br>
+        <label for="gender">User Gender</label><br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender" id="other" checked>
+        <label for="other">Other</label><br>
+
+        <label for="hobby">User Hobbies</label><br>
+        <input type="checkbox" name="game" id="game">
+        <label for="game">Playing Game</label><br>
+        <input type="checkbox" name="movie" id="movie" checked>
+        <label for="movie">Watching Movies </label><br>
+        <input type="checkbox" name="coding" id="coding" checked>
+        <label for="coding">Coding</label><br>
+
+        <label for="date">Date Select</label><br>
+        <input type="date" name="date" id="date" value="2023-07-27"><br>
+        <label for="number">Class Number</label><br>
+        <input type="number" name="number" id="number" min="1" max="3" value="3"><br><br>
+        <button type="submit">Submit</button><br>
+    </form>
+    <button type="reset" form="from">Reset</button><br>
+</body>
+</html>
