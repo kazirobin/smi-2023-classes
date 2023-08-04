@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css" media="all">
+    .main{
+      height: 350px;
+      width: 350px;
+      position: relative;
+      margin: auto;
+    }
+    [class*="box"]{
+      border-radius: 50%;
+    }
+    .box-1{
+      background-color: gray;
+      height: 290px;
+      width: 290px;
+      position: relative;
+      margin:20px auto;
+      z-index: -1;
+    }
+    .box-2{
+      height: 90px;
+      width: 90px;
+      background-color: gray;
+      position: absolute;
+    }
+    .box-2:nth-child(2){
+      top: 0;
+      right: 0;
+      height: 90px;
+      width: 90px;
+      background-color: gray;
+      position: absolute;
+    }
+    .box-3{
+      height: 110px;
+      width: 110px;
+      background-color: #fff;
+      position: absolute;
+      z-index: 1;
+      top: 90px;
+      left: 50px;
+    }
+    .box-3:nth-child(odd){
+      height: 110px;
+      width: 110px;
+      background-color: #fff;
+      position: absolute;
+      top: 90px;
+      left: 180px;
+    }
+    .box-4{
+      height: 60px;
+      width: 60px;
+      background-color: #000;
+      position: absolute;
+      left: 6px;
+      bottom:  6px;
+    }
+    .box-5{
+      height: 30px;
+      width: 30px;
+      background-color: #fff;
+      position: absolute;
+      left: 5px;
+      bottom:  5px;
+      z-index: 1;
+    }
+    .mouth{
+      height: 35px;
+      width: 60px;
+      background-color: #fff;
+      border-radius: 15px;
+      position: absolute;
+      top: 230px;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="box-2"></div>
+    <div class="box-2"></div>
+    <div class="box-3">
+      <div class="box-4">
+        <div class="box-5"></div>
+      </div>
+    </div>
+    <div class="box-3">
+      <div class="box-4">
+        <div class="box-5"></div>
+      </div>
+    </div>
+    <div class="mouth"></div>
+    <div class="box-1"></div>
+  </div>
+</body>
+</html>
